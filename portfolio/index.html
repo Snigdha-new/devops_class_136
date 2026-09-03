@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snigdha Madiraju | Systems & DevOps</title>
+    <style>
+        :root {
+            --bg: #090d16;
+            --card-bg: #111827;
+            --accent: #38bdf8;
+            --accent-green: #4ade80;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border: #1f2937;
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; }
+        body { background: var(--bg); color: var(--text-main); line-height: 1.6; padding: 20px 15px; max-width: 900px; margin: 0 auto; }
+        
+        header { border-bottom: 1px solid var(--border); padding-bottom: 25px; margin-bottom: 30px; margin-top: 20px; }
+        h1 { font-size: 2.2rem; color: #fff; margin-bottom: 5px; letter-spacing: -0.5px; }
+        .tagline { color: var(--accent); font-size: 1.1rem; margin-bottom: 15px; font-weight: 500; }
+        
+        .links { display: flex; gap: 10px; flex-wrap: wrap; }
+        .links a { color: var(--text-main); background: var(--card-bg); border: 1px solid var(--border); padding: 6px 14px; border-radius: 6px; font-size: 0.85rem; text-decoration: none; transition: 0.2s; }
+        .links a:hover { border-color: var(--accent); color: var(--accent); }
+
+        section { margin-bottom: 35px; }
+        h2 { font-size: 1.3rem; color: #fff; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
+        h2::before { content: "//"; color: var(--accent); }
+
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; }
+        .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 18px; display: flex; flex-direction: column; justify-content: space-between; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-3px); border-color: #374151; }
+        .card h3 { font-size: 1.05rem; color: #fff; margin-bottom: 8px; }
+        .card p { color: var(--text-muted); font-size: 0.88rem; margin-bottom: 15px; }
+
+        .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 15px; }
+        .tag { background: #1f2937; color: var(--accent-green); padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; border: 1px solid #374151; }
+
+        .btn-link { color: var(--accent); font-size: 0.85rem; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; }
+        .btn-link:hover { text-decoration: underline; }
+
+        .skills-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 18px; }
+        .skill-cat { margin-bottom: 12px; }
+        .skill-cat:last-child { margin-bottom: 0; }
+        .skill-cat strong { color: #fff; font-size: 0.85rem; display: block; margin-bottom: 6px; }
+
+        .edu-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 18px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+        .gpa { color: var(--accent-green); font-weight: bold; }
+
+        footer { text-align: center; color: var(--text-muted); font-size: 0.8rem; border-top: 1px solid var(--border); padding-top: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Snigdha Madiraju</h1>
+        <div class="tagline">Engineered Systems & Infrastructure</div>
+        <div class="links">
+            <a href="mailto:snigdhamadiraju2026@gmail.com">📧 Email</a>
+            <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">🐙 GitHub</a>
+            <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">💼 LinkedIn</a>
+            <a href="#">📍 Bangalore, India</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Featured Systems</h2>
+        <div class="project-grid">
+
+            <div class="card">
+                <div>
+                    <h3>The Digital Bouncer (API Gateway)</h3>
+                    <p>Ever wonder how apps stop spam before it hits their servers? Built a smart traffic manager that checks user badges (JWT), throttles spammy users, and reroutes requests if a backend server dies.</p>
+                    <div class="tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">JWT</span>
+                        <span class="tag">Load Balancing</span>
+                    </div>
+                </div>
+                <a href="https://github.com/YOUR-GITHUB-USERNAME" class="btn-link" target="_blank">View Code Architecture →</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Self-Healing Zepto Storefront</h3>
+                    <p>Simulated a high-concurrency 10-minute delivery storefront using Kubernetes. Sealed the web application inside an isolated Pod and carved out NodePort highways for smooth traffic flow.</p>
+                    <div class="tags">
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Minikube</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">YAML</span>
+                    </div>
+                </div>
+                <a href="https://github.com/YOUR-GITHUB-USERNAME" class="btn-link" target="_blank">View Code Architecture →</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>VeriLens (AI Fact-Checker)</h3>
+                    <p>Internet claims move fast, but VeriLens brings the receipts. It acts like a digital detective—searching the web, scoring source credibility, and delivering verdicts backed by real evidence.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">ChromaDB</span>
+                        <span class="tag">Gemini API</span>
+                    </div>
+                </div>
+                <a href="https://github.com/YOUR-GITHUB-USERNAME" class="btn-link" target="_blank">View Code Architecture →</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Mind-Reading Phone Sensor</h3>
+                    <p>Your scrolling habits change when your brain is tired. Built an inference engine catching cognitive overload via passive usage, boosted 12x faster by offloading heavy math to GPUs.</p>
+                    <div class="tags">
+                        <span class="tag">CUDA</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Gradio</span>
+                    </div>
+                </div>
+                <a href="https://github.com/YOUR-GITHUB-USERNAME" class="btn-link" target="_blank">View Code Architecture →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Arsenal</h2>
+        <div class="skills-box">
+            <div class="skill-cat">
+                <strong>Orchestration & DevOps</strong>
+                <div class="tags">
+                    <span class="tag">Docker</span>
+                    <span class="tag">Docker Compose</span>
+                    <span class="tag">Kubernetes (Minikube)</span>
+                    <span class="tag">Git & GitHub</span>
+                    <span class="tag">REST APIs</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <strong>Languages & Data</strong>
+                <div class="tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">C</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">MySQL</span>
+                </div>
+            </div>
+            <div class="skill-cat">
+                <strong>Frameworks & Tools</strong>
+                <div class="tags">
+                    <span class="tag">Express.js</span>
+                    <span class="tag">Flask</span>
+                    <span class="tag">Render</span>
+                    <span class="tag">SQLite</span>
+                    <span class="tag">Android Studio</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="edu-box">
+            <div>
+                <strong style="color:#fff;">BMS College of Engineering, Bangalore</strong>
+                <p style="color:var(--text-muted); font-size:0.85rem;">BE in Information Science and Engineering</p>
+            </div>
+            <div style="text-align: right;">
+                <span class="gpa">GPA: 9.4 / 10.0</span>
+                <p style="color:var(--text-muted); font-size:0.85rem;">2023 – 2027</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built & Deployed using Git & GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
