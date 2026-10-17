@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checking out source code...'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building application dependencies...'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running automated tests...'
+            }
+        }
+    }
+    post {
+        always {
+            echo 'Pipeline execution finished.'
+        }
+    }
+}
